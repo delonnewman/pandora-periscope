@@ -15,7 +15,7 @@ my $TITLE = 'Pandora Periscope';
 my $ICON  = File::Spec->join(dirname(__FILE__), '..', '..', 'extra', 'Pandora.png');
 
 sub exec {
-	Periscope->new(address => $URL, title => $TITLE, icon => $ICON)->show;
+	Periscope->new(address => $URL, title => $TITLE, icon => $ICON, width => 800, height => 600)->show;
 }
 
 1;
